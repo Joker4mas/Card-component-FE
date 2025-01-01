@@ -23,6 +23,11 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 1rem;
+    background-color: var(--Cream);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -33,18 +38,15 @@
 }
 
 @media screen and (min-width: 375px) {
-    body {
-        padding: 1rem;
-        /* margin: 4rem auto; */
-    }
+
 
     .product-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--Cream);
-        margin: 1rem auto;
+        background-color: var(--white);
+        /* margin: .5rem auto; */
         border-radius: 1rem;
 
     }
@@ -65,11 +67,6 @@
         border-top-right-radius: 1rem;
     }
 
-    .container img {
-        width: 100%;
-        border-radius: 1rem;
-    }
-
     .container h1 {
         font-size: clamp(2rem, 0.75rem + 1.5vw, 4rem);
         margin-bottom: 1rem;
@@ -79,15 +76,48 @@
 
     }
 
-    .container h3, p {
+    .container p {
         font-family: "Montserrat", serif;
         color: var(--DarkGrayishBlue);
-        margin: 1rem 0;
+        margin: .5rem 0;
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
     }
 
     .pef {
-        max-inline-size: 66ch;
-        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Fraunces', sans-serif;
+    }
+
+    .sp-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .prize {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--DarkCyan);
+        font-family: 'Fraunces', serif;
+
+    }
+
+    .stroke {
+        text-decoration: line-through;
+        color: var(--DarkGrayishBlue);
+    }
+
+    .btn {
+        width: 100%;
+        background-color: var(--DarkCyan);
+        color: var(--White);
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        cursor: pointer;
     }
 
 }
