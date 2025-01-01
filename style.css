@@ -24,23 +24,131 @@
 }
 
 body {
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--Cream);
 }
+
+.product-card {
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+    margin: 0 auto;
+    border-radius: 1rem;
+
+}
+
+.desko {
+    display: block;
+    height: 90vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    overflow: hidden;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--White);
+    padding: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.container h1 {
+    font-size: clamp(3em, 0.75rem + 1.5vw, 4em);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+    font-family: 'Fraunces', serif;
+
+}
+
+.text {
+    font-family: "Montserrat", serif;
+    color: var(--DarkGrayishBlue);
+    font-size: clamp(1em, 0.75rem + 1.5vw, 1.2em);
+    line-height: 1.5;
+}
+
+.pef {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--DarkGrayishBlue);
+    margin: 1rem 0;
+
+    /* font-family: 'Fraunces', sans-serif; */
+}
+
+.sp-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.prize {
+    font-size: clamp(2.5em, 0.75rem + 1.5vw, 1.4em);
+    font-weight: 700;
+    color: var(--DarkCyan);
+    font-family: 'Fraunces', serif;
+
+}
+
+.stroke {
+    text-decoration: line-through;
+    color: var(--DarkGrayishBlue);
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn img {
+    /* width: 1.5rem; */
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--DarkCyan);
+    color: var(--White);
+}
+
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: .4rem 0;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
+
+/* mobile view */
+@media screen and (max-width: 375px) {
 
 
     .product-card {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,6 +160,7 @@ body {
     }
 
     .container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -59,7 +168,11 @@ body {
         padding: 1rem;
     }
 
-    .product-image img {
+    .desko {
+        display: none;
+    }
+
+    .product-image .mobile-image {
         display: block;
         max-width: 100%;
         overflow: hidden;
@@ -96,7 +209,7 @@ body {
     }
 
     .prize {
-        font-size: 1.5rem;
+        font-size: clamp(2rem, 0.75rem + 1.5vw, 3rem);
         font-weight: 700;
         color: var(--DarkCyan);
         font-family: 'Fraunces', serif;
@@ -116,7 +229,7 @@ body {
         border-radius: .5rem;
         font-size: 1rem;
         font-weight: 700;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         cursor: pointer;
     }
 
