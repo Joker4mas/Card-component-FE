@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/card-preview-desk.png)
+![](./images/desk-og.png)
 
 ### Links
 
@@ -60,7 +60,7 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-I will contu=inue to learn more css functions to grow my skill and also improve in usage of what i have lerant.
+I will continue to learn more css functions and variables to grow my skill and also improve in usage of what i have lerant.
 
 ### Useful resources
 
