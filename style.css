@@ -114,12 +114,15 @@ body {
     margin: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 375px) {
 
+    body {
+        padding: 1rem;
+    }
 
     .product-card {
-        --content-padding: 2rem;
-        grid-template-columns: 1fr 1fr;
+        /* --content-padding: 1rem; */
+        grid-template-columns: 1fr;
     }
 
 }
