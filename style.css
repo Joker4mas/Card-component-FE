@@ -114,7 +114,7 @@ body {
     margin: auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 428px) {
 
     body {
         padding: 1rem;
